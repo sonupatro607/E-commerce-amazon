@@ -219,6 +219,10 @@ export function Slider() {
   );
 }
 export function Products() {
+  let navigate = useNavigate();
+  function signinnext() {
+    navigate("/signin");
+  }
   return (
     <div className="main-ctn">
       <div className="div1">
@@ -338,7 +342,7 @@ export function Products() {
               <br />
               experience
             </h2>
-            <button className="signinbutton" type="submit">
+            <button className="signinbutton" type="submit" onClick={signinnext}>
               Sign in securely
             </button>
           </div>
@@ -990,11 +994,18 @@ export function Products() {
   );
 }
 export function Bottomsignin() {
+  let navigate = useNavigate();
+
+  function navigates() {
+    navigate("/signin");
+  }
   return (
     <div className="div15">
       <div className="div151"></div>
       <p className="recompara">See personalized recommendation</p>
-      <Button className="sign">Sign in</Button>
+      <Button className="sign" onClick={navigates}>
+        Sign in
+      </Button>
       <div className="div152">
         <p className="new">New customer?</p>
         <a href="#" className="start">

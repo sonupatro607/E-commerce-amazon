@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.signin-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+.signin-main img {
+  width: 120px;
+  height: 41px;
+}
+.box_ctn {
+  width: 360px;
+  height: 300px;
+  border: 1px solid #dddddd;
+  border-radius: 9px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.head_signin {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-weight: 500;
+  font-size: 30px;
+}
+.para_signin {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.enter_email {
+  width: 320px;
+  height: 33px;
+  position: relative;
+  top: 17px;
+  left: 20px;
+  border: 1px solid #949494;
+  border-radius: 4px;
+}
+.button {
+  width: 320px;
+  height: 31px;
+  background-color: #fbd940;
+  position: relative;
+  top: 30px;
+  left: 20px;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+}
+.button:hover,
+.button:focus {
+  background-color: #f7ca00;
+}
+
+.enter_email:hover,
+.enter_email:focus {
+  border: 2px double skyblue;
+}
+.toggle_drp {
+  border: none;
+  position: relative;
+  top: 68px;
+  left: 25px;
+  -webkit-appearance: none; /*it remove toggle logo*/
+  font-size: 13px;
+  color: #0a9de2;
+}
+
+.toggle_drp:hover,
+.toggle_drp:focus {
+  outline: none;
+  border: none;
+}
+.policy_ctn {
+  width: 320px;
+  height: 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+.pcy_para {
+  font-size: 13px;
+  position: relative;
+  top: 9px;
+}
+.linn {
+  text-decoration: none;
+  margin: 5px;
+}
+.allitem {
+  display: flex;
+  justify-content: center;
+}
+.leftline,
+.rightline {
+  width: 120px;
+  height: 1px;
+  background-color: #e7e7e7;
+  position: relative;
+  top: 30px;
+}
+.leftline {
+  margin-right: 5px;
+}
+.rightline {
+  margin-left: 5px;
+}
+.bottom_para {
+  position: relative;
+  top: 22px;
+  color: #7a7a83;
+  font-size: 13px;
+}
+.button_createbtn {
+  width: 358px;
+  height: 31px;
+  position: relative;
+  top: 15px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid #e2e4e4;
+  font-size: 14px;
+}
+.button_createbtn:hover,
+.button_createbtn:focus {
+  background-color: whitesmoke;
+}
+.extrem_btm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  gap: 10px;
+}
+.line_hr {
+  width: 85vw;
+  height: 1px;
+  background-color: #e7e7e7;
+}
+.link_sec {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.li {
+  text-decoration: none;
+  font-size: 11px;
+  position: relative;
+  top: 16px;
+}
+.copyright_pra {
+  font-size: 11px;
+  position: relative;
+  top: 17px;
+  color: #7a7a83;
+}

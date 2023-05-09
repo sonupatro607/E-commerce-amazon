@@ -17,6 +17,7 @@ import {
   Pagebuttons,
   Bottomsection,
 } from "./Pages/Todaysdeal/todaysdeal";
+import Signin from "./Pages/Signin/sign";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -50,6 +51,15 @@ function App() {
                 <Productsdealslist />
                 <Pagebuttons />
                 <Bottomsection />
+              </React.Fragment>
+            }
+          />
+          <Route
+            exact
+            path="/signin"
+            element={
+              <React.Fragment>
+                <Signin />
               </React.Fragment>
             }
           />
