@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.create_account_main {
+  height: 823px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+.create_account_main img {
+  width: 120px;
+  height: 41px;
+}
+.box_ctn_createaccount {
+  width: 360px;
+  height: 643px;
+  border: 1px solid #dddddd;
+  border-radius: 9px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.head_createaccount {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-weight: 500;
+  font-size: 30px;
+}
+.para_createaccount {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.enter_name {
+  width: 320px;
+  height: 31px;
+  position: relative;
+  top: 17px;
+  left: 20px;
+  border: 1px solid #949494;
+  border-radius: 4px;
+}
+.enter_name:hover,
+.enter_name:focus {
+  border: 2px double skyblue;
+}
+.enter_name::placeholder,
+.enter_number::placeholder {
+  font-size: 14px;
+  position: relative;
+  left: 8px;
+  bottom: 2px;
+}
+.mobileno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 17px;
+}
+.drop_down_country_code {
+  width: 70px;
+  height: 33px;
+  border: 1px solid #d5d9d9;
+  border-radius: 6px;
+  font-size: 14px;
+  position: relative;
+  /* top: 17px; */
+  /* right: 10px; */
+}
+.drop_down_country_code:hover,
+.drop_down_country_code:focus {
+  background-color: whitesmoke;
+}
+.enter_number {
+  width: 230px;
+  height: 31px;
+  position: relative;
+  /* top: 17px;
+  left: 10px; */
+  border: 1px solid #949494;
+  border-radius: 4px;
+}
+.enter_number:hover,
+.enter_number:focus {
+  border: 2px double skyblue;
+}
+.createaccount_footer {
+  position: relative;
+  bottom: 11px;
+}
