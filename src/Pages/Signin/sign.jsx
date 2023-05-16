@@ -9,12 +9,16 @@ import { useNavigate } from "react-router-dom";
 export function Signin() {
   let navigate = useNavigate();
 
+  function bringhomepage() {
+    navigate("/");
+  }
+
   function createaccount() {
     navigate("/signin/createaccount");
   }
   return (
     <div className="signin-main">
-      <img className="img" src={amzon}></img>
+      <img className="img" src={amzon} onClick={bringhomepage}></img>
       <div className="box_ctn">
         <h3 className="head_signin">Sign in</h3>
         <p className="para_signin">Enter mobile phone number or email</p>
@@ -61,13 +65,13 @@ export function Signinbottom() {
     <div className="extrem_btm">
       <div className="line_hr"></div>
       <div className="link_sec">
-        <a href="#" className="consiton li">
+        <a href="#" className="consiton li ppolicy">
           Conditions of Use{" "}
         </a>
-        <a href="#" className="privacy li">
+        <a href="#" className="privacy li ppolicy">
           Privacy Notice{" "}
         </a>
-        <a href="#" className="help li">
+        <a href="#" className="help li ppolicy">
           Help{" "}
         </a>
       </div>

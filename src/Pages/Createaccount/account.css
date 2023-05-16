@@ -6,7 +6,7 @@
 }
 
 .create_account_main {
-  height: 823px;
+  height: 863px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -19,7 +19,7 @@
 }
 .box_ctn_createaccount {
   width: 360px;
-  height: 643px;
+  height: 670px;
   border: 1px solid #dddddd;
   border-radius: 9px;
   margin-top: 20px;
@@ -34,14 +34,18 @@
   font-weight: 500;
   font-size: 30px;
 }
-.para_createaccount {
+.para_createaccount,
+.emialpara_createaccount,
+.passwordpara_createaccount {
   position: relative;
   top: 30px;
   left: 20px;
   font-size: 14px;
   font-weight: bold;
 }
-.enter_name {
+.enter_name,
+.enter_email,
+.enter_password {
   width: 320px;
   height: 31px;
   position: relative;
@@ -55,7 +59,8 @@
   border: 2px double skyblue;
 }
 .enter_name::placeholder,
-.enter_number::placeholder {
+.enter_number::placeholder,
+.enter_password::placeholder {
   font-size: 14px;
   position: relative;
   left: 8px;
@@ -76,8 +81,7 @@
   border-radius: 6px;
   font-size: 14px;
   position: relative;
-  /* top: 17px; */
-  /* right: 10px; */
+  right: 10px;
 }
 .drop_down_country_code:hover,
 .drop_down_country_code:focus {
@@ -87,14 +91,97 @@
   width: 230px;
   height: 31px;
   position: relative;
-  /* top: 17px;
-  left: 10px; */
+  left: 10px;
   border: 1px solid #949494;
   border-radius: 4px;
 }
 .enter_number:hover,
 .enter_number:focus {
   border: 2px double skyblue;
+}
+.enter_password:hover,
+.enter_passwprd:focus {
+  border: 2px double skyblue;
+}
+.first_top_para {
+  position: relative;
+  top: 17px;
+  left: 26px;
+  font-size: 12px;
+}
+i {
+  color: #70bad5;
+  font-size: 15px;
+  position: relative;
+  right: 4px;
+  font-weight: bold;
+}
+.div_second_para {
+  width: 318px;
+  height: 80px;
+  border: none;
+  position: relative;
+  top: 20px;
+  left: 22px;
+}
+.second_para_createaccount {
+  font-size: 13px;
+  color: black;
+}
+.button_createaccount {
+  width: 320px;
+  height: 31px;
+  background-color: #fbd940;
+  position: relative;
+  top: 36px;
+  left: 20px;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+}
+.button_createaccount:hover,
+.button_createaccount:focus {
+  background-color: #f7ca00;
+}
+.hhr_line_createaccount {
+  width: 50%;
+  height: 1px;
+  border: 1px solid #ececec;
+  position: relative;
+  top: 65px;
+  left: 90px;
+}
+.mid_condition {
+  margin-left: 3px;
+}
+.mid_link {
+  text-decoration: none;
+  color: blue;
+}
+.mid_link:hover,
+.mid_link:focus {
+  text-decoration: underline;
+  color: #ca6d41;
+}
+.two_lines {
+  position: relative;
+  top: 70px;
+}
+.have_account {
+  position: relative;
+  top: 15px;
+}
+.have_account,
+.buying_account {
+  font-size: 14px;
+  position: relative;
+  left: 23px;
+}
+.lastpara_createaccount {
+  font-size: 13px;
+  position: relative;
+  top: 73px;
+  left: 23px;
 }
 .createaccount_footer {
   position: relative;

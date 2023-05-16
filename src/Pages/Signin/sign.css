@@ -75,7 +75,7 @@
   left: 25px;
   -webkit-appearance: none; /*it remove toggle logo*/
   font-size: 13px;
-  color: #0a9de2;
+  color: blue;
 }
 
 .toggle_drp:hover,
@@ -83,6 +83,7 @@
   outline: none;
   border: none;
 }
+
 .policy_ctn {
   width: 320px;
   height: 38px;
@@ -102,6 +103,12 @@
 .linn {
   text-decoration: none;
   margin: 5px;
+  color: blue;
+}
+.linn:hover,
+.linn:focus {
+  text-decoration: underline;
+  color: #d57a00;
 }
 .allitem {
   display: flex;
@@ -155,6 +162,14 @@
   height: 1px;
   background-color: #e7e7e7;
 }
+.ppolicy {
+  color: blue;
+}
+.ppolicy:hover,
+.ppolicy:focus {
+  text-decoration: underline;
+  color: #c45500;
+}
 .link_sec {
   display: flex;
   justify-content: center;
@@ -170,5 +185,5 @@
   font-size: 11px;
   position: relative;
   top: 17px;
-  color: #7a7a83;
+  color: #555555;
 }

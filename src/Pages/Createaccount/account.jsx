@@ -2,10 +2,20 @@ import React from "react";
 import "./account.css";
 import { Signinbottom } from "../Signin/sign";
 import amzon from "./Screenshot 2023-05-09 065016.png";
+import { useNavigate } from "react-router-dom";
+
 export function Account() {
+  let navigate = useNavigate();
+
+  function bringmetohomepage() {
+    navigate("/");
+  }
+  function bringtosigninpage() {
+    navigate("/signin");
+  }
   return (
     <div className="create_account_main">
-      <img className="img" src={amzon}></img>
+      <img className="img" src={amzon} onClick={bringmetohomepage}></img>
       <div className="box_ctn_createaccount">
         <h3 className="head_createaccount">Create Account</h3>
         <p className="para_createaccount">Your name</p>
@@ -30,30 +40,54 @@ export function Account() {
             ></input>
           </div>
         </div>
-        <button className="button">Continue</button>
-        <div className="policy_ctn">
-          <p className="pcy_para">
-            By continuing, you agaree to Amazon's
-            <a className="linn pp_link1" href="#">
-              Condition of Use{" "}
+        <p className="emialpara_createaccount">Email (optional)</p>
+        <div className="emial_createaccount">
+          <input type="text" className="enter_email"></input>
+        </div>
+        <p className="passwordpara_createaccount">Password</p>
+        <div className="password_createaccount">
+          <input
+            type="text"
+            className="enter_password"
+            placeholder="At least 6 character"
+          ></input>
+        </div>
+        <p className="first_top_para">
+          <i clasName="i_itali">i</i> Passwords must be at least 6 characters.
+        </p>
+        <div className="div_second_para">
+          <p className="second_para_createaccount">
+            By enrolling your mobile phone number, you consent to receive
+            automated security notifications via text message from Amazon.
+            Message and data rates may apply.
+          </p>
+        </div>
+        <button className="button_createaccount">Continue</button>
+        <div className="hhr_line_createaccount"></div>
+        <div className="two_lines">
+          <p className="have_account">
+            Already have an account?{" "}
+            <a href="#" className="mid_link" onClick={bringtosigninpage}>
+              Sign in
             </a>
-            and
-            <a className="linn pp_link2" href="#">
-              Privacy Notice
+          </p>
+          <p className="buying_account">
+            Buying for work?{" "}
+            <a href="#" className="mid_link">
+              Create a free business account
             </a>
           </p>
         </div>
-        <select className="toggle_drp">
-          <option>
-            <a className="opt opt_link1">Need help?</a>
-          </option>
-          <option>
-            <a className="opt opt_link2">Forget Password</a>
-          </option>
-          <option>
-            <a className="opt opt_link3">Other issues with Sign-In</a>
-          </option>
-        </select>
+        <div className="lastpara_createaccount">
+          By creating an account or logging in, you agree to Amazon’s
+          <a href="#" className="mid_condition mid_link">
+            Conditions of Use{" "}
+          </a>{" "}
+          and{" "}
+          <a href="#" className="mid_link">
+            Privacy Policy.
+          </a>
+        </div>
       </div>
       <div className="createaccount_footer">
         <Signinbottom />
