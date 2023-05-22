@@ -311,6 +311,7 @@
 .carousel {
   position: relative;
   z-index: 1;
+  background-size: cover;
 }
 /* for divs */
 .main-ctn {
@@ -321,11 +322,11 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
-  background-color: aqua;
   position: absolute;
   z-index: 2;
   top: 400px;
-  /* opacity: 0.4; */
+  background-color: #f1f1f1;
+  /* background: transparent; */
 }
 .div1,
 .div2,
@@ -339,7 +340,23 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+}
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10,
+.div11,
+.div12,
+.div13,
+.div14 {
+  background-color: #f1f1f1;
+  /* background: transparent; */
 }
 .div3 {
   width: 100%;
@@ -348,9 +365,33 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* background-color: #e3e6e6; */
   gap: 20px;
-  background-color: white;
   overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.div3::-webkit-scrollbar,
+.div4::-webkit-scrollbar,
+.div5::-webkit-scrollbar,
+.div8::-webkit-scrollbar {
+  height: 0%;
+  width: 0%;
+}
+.Api_CTN {
+  background-color: white;
+  width: 500px;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.Api_img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
 }
 .div4,
 .div5 {
@@ -361,8 +402,18 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  /* background-color: #e3e6e6; */
   overflow-x: auto;
+}
+.div4,
+.div5 {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.Api_img1 {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
 }
 .div7 {
   width: 100%;
@@ -372,7 +423,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  /* background-color: #e3e6e6; */
   overflow-x: auto;
 }
 .div8 {
@@ -383,9 +434,14 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  /* background-color: #e3e6e6; */
   overflow-x: auto;
 }
+.api_rate {
+  position: relative;
+  bottom: 10px;
+}
+
 .div9 {
   width: 100%;
   height: 250px;
@@ -394,8 +450,18 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  /* background-color: #e3e6e6; */
   overflow-x: auto;
+}
+.Api_img9,
+.Api_img11,
+.Api_img12,
+.Api_img14 {
+  width: 300px;
+  height: 130px;
+  margin: 10px;
+  position: relative;
+  top: 10px;
 }
 .div11 {
   width: 100%;
@@ -405,7 +471,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  /* background-color: #e3e6e6; */
   overflow-x: auto;
 }
 .div12 {
@@ -416,7 +482,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  /* background-color: #e3e6e6; */
   overflow-x: auto;
 }
 .div14 {
@@ -427,8 +493,12 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  /* background-color: #e3e6e6; */
   overflow-x: auto;
+}
+.div14::-webkit-scrollbar {
+  width: 0%;
+  height: 0%;
 }
 .div15 {
   width: 100%;
@@ -457,7 +527,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: aquamarine;
+  background-color: white;
 }
 .div114 {
   width: 312px;
@@ -476,7 +546,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: aquamarine;
+  background-color: white;
 }
 .sponsorimg {
   width: 300px;
@@ -700,9 +770,14 @@ div11321,
   position: relative;
   bottom: 138px;
   border-radius: 7px;
-  background-color: #f7ca00;
+  background-color: #ffd000;
+  border: none;
   color: #232110;
   font-size: 14px;
+}
+.signinbutton:hover,
+.signinbutton:focus {
+  background-color: #f5c905;
 }
 .div21211,
 .div21212,
@@ -854,10 +929,32 @@ div31221,
 }
 .btn-primary {
   width: 230px !important;
-  height: 40px !important;
+  height: 30px !important;
   border-radius: 7px;
-  background-color: #ffca44 !important;
+  background-image: linear-gradient(
+    to top,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #f9ce57,
+    #f9ce57,
+    #f9ce57,
+    #fce4a3
+  ) !important;
+  /* background-color: #ffbb00 !important; */
   color: #422f00 !important;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #f5b002 !important;
+}
+.sign_btnnnn {
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .new {

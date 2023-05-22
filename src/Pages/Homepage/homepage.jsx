@@ -1,4 +1,5 @@
 import React from "react";
+import { Api } from "../Api";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -478,9 +479,45 @@ export function Products() {
           </a>
         </div>
       </div>
-      <div className="div3"></div>
-      <div className="div4"></div>
-      <div className="div5"></div>
+      <div className="div3">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img"></img>
+                <p>{item.price}</p>
+                <p>{item.rating.rate}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <div className="div4">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img1"></img>
+                <p>{item.price}</p>
+                <p>{item.rating.count}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <div className="div5">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img1"></img>
+                <p>{item.price}</p>
+                <p>{item.rating.count}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
       <div className="div6">
         <div className="div211">
           <h2 className="pharhead6">
@@ -646,9 +683,45 @@ export function Products() {
           </a>
         </div>
       </div>
-      <div className="div7"></div>
-      <div className="div8"></div>
-      <div className="div9"></div>
+      <div className="div7">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img1"></img>
+                <p>{item.price}</p>
+                <p>{item.rating.rate}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <div className="div8">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img1"></img>
+                <p>{item.price}</p>
+                <p>{item.rating.rate}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <div className="div9">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img9"></img>
+                <p>{item.price}</p>
+                <p className="api_rate">{item.rating.rate}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
       <div className="div10">
         <div className="div211">
           <h2 className="Revamphead4">
@@ -816,8 +889,32 @@ export function Products() {
           </a>
         </div>
       </div>
-      <div className="div11"></div>
-      <div className="div12"></div>
+      <div className="div11">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img11"></img>
+                <p>{item.price}</p>
+                <p>{item.rating.rate}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <div className="div12">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img12"></img>
+                <p>{item.price}</p>
+                <p>{item.rating.rate}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
       <div className="div13">
         <div className="div211">
           <h2 className="pharhead5">
@@ -989,7 +1086,19 @@ export function Products() {
           </a>
         </div>
       </div>
-      <div className="div14"></div>
+      <div className="div14">
+        {Api.map((item, index) => {
+          return (
+            <>
+              <div className="Api_CTN">
+                <img src={item.image} className="Api_img14"></img>
+                <p>{item.price}</p>
+                <p>{item.rating.rate}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -1004,7 +1113,7 @@ export function Bottomsignin() {
       <div className="div151"></div>
       <p className="recompara">See personalized recommendation</p>
       <Button className="sign" onClick={navigates}>
-        Sign in
+        <p className="sign_btnnnn">Sign in</p>
       </Button>
       <div className="div152">
         <p className="new">New customer?</p>
