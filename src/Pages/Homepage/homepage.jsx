@@ -216,7 +216,13 @@ export function Slider() {
           alt="Fivth slide"
         />
       </Carousel.Item>
-      <div className="div_section_background"></div>
+      <div className="div_section_background">
+        <img
+          className="d-block w-100"
+          src="https://m.media-amazon.com/images/I/51ovs76vmtL._SX3000_.jpg"
+          alt="Fivth slide"
+        />
+      </div>
     </Carousel>
   );
 }
