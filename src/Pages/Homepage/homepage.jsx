@@ -216,9 +216,11 @@ export function Slider() {
           alt="Fivth slide"
         />
       </Carousel.Item>
+      <div className="div_section_background"></div>
     </Carousel>
   );
 }
+
 export function Products() {
   let navigate = useNavigate();
   function signinnext() {
