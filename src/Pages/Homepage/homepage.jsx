@@ -493,8 +493,15 @@ export function Products() {
             <>
               <div className="Api_CTN">
                 <img src={item.image} className="Api_img"></img>
-                <p>{item.price}</p>
-                <p>{item.rating.rate}</p>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );
@@ -506,8 +513,15 @@ export function Products() {
             <>
               <div className="Api_CTN">
                 <img src={item.image} className="Api_img1"></img>
-                <p>{item.price}</p>
-                <p>{item.rating.count}</p>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );
@@ -519,8 +533,15 @@ export function Products() {
             <>
               <div className="Api_CTN">
                 <img src={item.image} className="Api_img1"></img>
-                <p>{item.price}</p>
-                <p>{item.rating.count}</p>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );
@@ -697,8 +718,15 @@ export function Products() {
             <>
               <div className="Api_CTN">
                 <img src={item.image} className="Api_img1"></img>
-                <p>{item.price}</p>
-                <p>{item.rating.rate}</p>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );
@@ -710,8 +738,15 @@ export function Products() {
             <>
               <div className="Api_CTN">
                 <img src={item.image} className="Api_img1"></img>
-                <p>{item.price}</p>
-                <p>{item.rating.rate}</p>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );
@@ -722,9 +757,16 @@ export function Products() {
           return (
             <>
               <div className="Api_CTN">
-                <img src={item.image} className="Api_img9"></img>
-                <p>{item.price}</p>
-                <p className="api_rate">{item.rating.rate}</p>
+                <img src={item.image} className="Api_img1"></img>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );
@@ -903,8 +945,15 @@ export function Products() {
             <>
               <div className="Api_CTN">
                 <img src={item.image} className="Api_img11"></img>
-                <p>{item.price}</p>
-                <p>{item.rating.rate}</p>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );
@@ -916,8 +965,15 @@ export function Products() {
             <>
               <div className="Api_CTN">
                 <img src={item.image} className="Api_img12"></img>
-                <p>{item.price}</p>
-                <p>{item.rating.rate}</p>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );
@@ -1100,8 +1156,15 @@ export function Products() {
             <>
               <div className="Api_CTN">
                 <img src={item.image} className="Api_img14"></img>
-                <p>{item.price}</p>
-                <p>{item.rating.rate}</p>
+                <p className="Api_price">{item.price}</p>
+                <div className="btns_add">
+                  <button type="submit" className="addto_cart">
+                    Add to Cart
+                  </button>
+                  <button type="submit" className="buy_now">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </>
           );

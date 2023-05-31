@@ -398,6 +398,57 @@
   height: 200px;
   margin: 10px;
 }
+.Api_price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.btns_add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.addto_cart,
+.buy_now {
+  width: 140px;
+  height: 30px;
+  background-image: linear-gradient(
+    to top,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #f9ce57,
+    #f9ce57,
+    #f9ce57,
+    #fce4a3
+  );
+  border: none;
+  border-radius: 7px;
+}
+.addto_cart:hover,
+.addto_cart:focus,
+.buy_now:hover,
+.buy_now:focus {
+  background-image: linear-gradient(
+    to bottom,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #f9ce57,
+    #f9ce57,
+    #f9ce57,
+    #fce4a3
+  );
+}
 .div4,
 .div5 {
   width: 100%;
@@ -955,7 +1006,20 @@ div31221,
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #f5b002 !important;
+  background-image: linear-gradient(
+    to bottom,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #ffbb00,
+    #f9ce57,
+    #f9ce57,
+    #f9ce57,
+    #fce4a3
+  ) !important;
 }
 .sign_btnnnn {
   font-weight: bold;
